@@ -42,4 +42,3 @@ function satisfyingJump( array, f_position, f_jump)
     }
     
 }
-              
