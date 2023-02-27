@@ -1,0 +1,25 @@
+array = [24, 85, 0];
+/*
+function solution(a) {
+  let value = a.reduce((total, numero, index, a) => {
+    return (total += numero.toString(2).padStart(8, "0"));
+  }, []);
+  return parseInt(value.split("").reverse().join(""), 2);
+}
+
+
+*/
+/*  } else {
+      return parseInt(total.split("").reverse().join(""), 2);
+    }*/
+
+function solution(a) {
+  let M = 0;
+  for (let i = a.length - 1; i >= 0; i--) {
+    M = M << 8; // left shift by 8 bits
+    M += a[i];
+  }
+  return M;
+}
+
+console.log(solution(array));
