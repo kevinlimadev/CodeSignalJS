@@ -7,4 +7,3 @@ function solution(a) {
   return M;
 }
 
-console.log(solution(array));
